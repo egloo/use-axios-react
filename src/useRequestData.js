@@ -86,5 +86,6 @@ function normalizedConfig(config) {
 }
 
 const useGetData = (config, ...args) => useRequestData({ ...normalizedConfig(config), method: 'GET' }, ...args);
+const usePostData = (config, ...args) => useRequestData({ ...normalizedConfig(config), method: 'POST' }, ...args);
 
-export { useGetData };
+export { useGetData, usePostData };
